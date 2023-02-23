@@ -1,0 +1,34 @@
+*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication5_3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author JAVA
+ */
+public class JavaApplication5_3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+        System.out.print("cuantos numeros desea introducir:");
+        int cantidadNum=sc.nextInt();
+        int t[]=new int[cantidadNum];
+        for (int i = 0; i < t.length; i++) {
+            System.out.println("introduzca un numero:");
+            t[i]=sc.nextInt();
+        }
+        System.out.println("los numeros en orden inverso son:");
+        for (int i = t.length - 1; i >= 0; i--) {
+            System.out.println(t[i]);
+            
+        }
+    }
+    
+}
